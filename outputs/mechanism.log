@@ -1,0 +1,23 @@
+=== 1. LENGTH OF STAY BY OUTCOME ===
+  survivors  n=75,767  mean= 10.06d  median= 6.84d  Q25= 4.07  Q75= 11.79
+  deaths     n= 9,475  mean= 10.45d  median= 6.04d  Q25= 2.06  Q75= 13.50
+
+=== 2. SPEARMAN rho(count, LOS) — pooled vs stratified ===
+  pooled      0.5287   (paper reports 0.529)
+  survivors   0.5578
+  deaths      0.5576
+
+=== 3. AUROC of the count WITHIN length-of-stay strata ===
+     (if LOS-proxying drives it, within-stratum AUROC should collapse)
+  LOS   -inf-  3.38d  n=17,049  deaths=3,300  AUROC=0.7651
+  LOS   3.38-  5.58d  n=17,052  deaths=1,225  AUROC=0.7873
+  LOS   5.58-  8.20d  n=17,044  deaths=1,136  AUROC=0.7529
+  LOS   8.20- 13.89d  n=17,049  deaths=1,539  AUROC=0.7491
+  LOS  13.89-   infd  n=17,048  deaths=2,275  AUROC=0.6642
+  --> pooled AUROC(count) = 0.6941
+
+=== 4. CAP MASS AT 39, BY CLASS  (Appendix B) ===
+  survivors  at cap:  1,618 / 75,767 = 2.135%
+  deaths     at cap:    687 /  9,475 = 7.251%
+
+wrote outputs/mechanism.json

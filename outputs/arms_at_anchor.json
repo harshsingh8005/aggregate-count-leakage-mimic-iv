@@ -1,0 +1,58 @@
+{
+  "corpus": "MIMIC-IV v3.1 credentialed",
+  "anchor": "alive and inpatient at 24 h after ICU admission",
+  "seed": 42,
+  "folds": 5,
+  "n_boot": 1000,
+  "n": 81052,
+  "n_pos": 7659,
+  "n_subjects": 62421,
+  "a": {
+    "auroc": {
+      "point": 0.8388,
+      "lo95": 0.8343,
+      "hi95": 0.8429
+    },
+    "auprc": {
+      "point": 0.4046,
+      "lo95": 0.3924,
+      "hi95": 0.4165
+    },
+    "brier": 0.0695,
+    "cal_slope": 0.984,
+    "cal_intercept": -0.02
+  },
+  "b": {
+    "auroc": {
+      "point": 0.8558,
+      "lo95": 0.8518,
+      "hi95": 0.8596
+    },
+    "auprc": {
+      "point": 0.4162,
+      "lo95": 0.4044,
+      "hi95": 0.4279
+    },
+    "brier": 0.0685,
+    "cal_slope": 0.977,
+    "cal_intercept": -0.031
+  },
+  "c": {
+    "auroc": {
+      "point": 0.8544,
+      "lo95": 0.8503,
+      "hi95": 0.8581
+    },
+    "auprc": {
+      "point": 0.415,
+      "lo95": 0.4032,
+      "hi95": 0.4268
+    },
+    "brier": 0.0686,
+    "cal_slope": 0.983,
+    "cal_intercept": -0.021
+  },
+  "delta_b_minus_a_auroc": 0.017,
+  "delta_c_minus_a_auroc": 0.0156,
+  "wall_seconds": 1712.2
+}

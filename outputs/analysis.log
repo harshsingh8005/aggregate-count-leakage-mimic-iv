@@ -1,0 +1,14 @@
+[01:44:58] Building charttime cohort (full corpus)...
+[01:54:18]   cohort n=85242 n_pos=9475 subjects=65366 prevalence=0.1112
+[01:54:27] TASK 2: three-arm subject-grouped CV (parameterized encoder)
+[01:59:12]   arm a: AUROC=0.8628 [0.8592,0.8667] AUPRC=0.5450 Brier=0.0709 slope=0.995 icpt=-0.044
+[02:02:56]   arm b: AUROC=0.8757 [0.8721,0.8790] AUPRC=0.5536 Brier=0.0702 slope=0.989 icpt=-0.057
+[02:06:23]   arm c: AUROC=0.8748 [0.8714,0.8782] AUPRC=0.5526 Brier=0.0702 slope=0.991 icpt=-0.051
+[02:06:23] TASK 3: n_diagnoses isolation test (sole feature)
+[02:08:12]   n_diagnoses-only AUROC=0.6931 [0.6875,0.6985] spearman=0.5287
+[02:08:12] TASK 5-critical: charttime vs storetime gap quantiles
+[02:10:26]   labevents: median=72.0 q95=349.0 q99=530.0 n=37872100 n_neg=351
+[02:14:21]   chartevents: median=23.0 q95=139.0 q99=262.0 n=54560385 n_neg=779303
+[02:14:21] Building storetime cohort (full corpus) for arm-(a) delta...
+[02:23:27]   arm(a) storetime AUROC=0.8615 delta=-0.0013
+[02:23:27] DONE in 2309.7s -> outputs/results.json

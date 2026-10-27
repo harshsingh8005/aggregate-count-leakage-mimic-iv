@@ -1,0 +1,72 @@
+{
+  "labs": [
+    {
+      "f": "creatinine",
+      "cov": 0.9685,
+      "auroc": 0.6672,
+      "oriented": 0.6672
+    },
+    {
+      "f": "wbc",
+      "cov": 0.9621,
+      "auroc": 0.5973,
+      "oriented": 0.5973
+    },
+    {
+      "f": "hemoglobin",
+      "cov": 0.9624,
+      "auroc": 0.4129,
+      "oriented": 0.5871
+    },
+    {
+      "f": "platelet",
+      "cov": 0.9626,
+      "auroc": 0.4388,
+      "oriented": 0.5612
+    },
+    {
+      "f": "glucose",
+      "cov": 0.9692,
+      "auroc": 0.5825,
+      "oriented": 0.5825
+    },
+    {
+      "f": "sodium",
+      "cov": 0.9689,
+      "auroc": 0.5012,
+      "oriented": 0.5012
+    },
+    {
+      "f": "potassium",
+      "cov": 0.9686,
+      "auroc": 0.5629,
+      "oriented": 0.5629
+    },
+    {
+      "f": "bicarbonate",
+      "cov": 0.9683,
+      "auroc": 0.3521,
+      "oriented": 0.6479
+    },
+    {
+      "f": "bun",
+      "cov": 0.9683,
+      "auroc": 0.7006,
+      "oriented": 0.7006
+    },
+    {
+      "f": "lactate",
+      "cov": 0.5378,
+      "auroc": 0.6803,
+      "oriented": 0.6803
+    }
+  ],
+  "count": 0.6941,
+  "age": 0.6122,
+  "head_to_head": {
+    "feature": "bun",
+    "n": 82538,
+    "count": 0.7125,
+    "rival": 0.7006
+  }
+}

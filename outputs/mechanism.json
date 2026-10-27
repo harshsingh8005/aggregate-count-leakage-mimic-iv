@@ -1,0 +1,22 @@
+{
+  "los_by_outcome": {
+    "survivor_median": 6.837,
+    "death_median": 6.044
+  },
+  "spearman": {
+    "pooled": 0.5287,
+    "survivors": 0.5578,
+    "deaths": 0.5576
+  },
+  "auroc_count_within_los_strata": [
+    0.7651,
+    0.7873,
+    0.7529,
+    0.7491,
+    0.6642
+  ],
+  "cap_mass": {
+    "survivor_frac": 0.02135,
+    "death_frac": 0.07251
+  }
+}

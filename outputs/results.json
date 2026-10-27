@@ -1,0 +1,192 @@
+{
+  "corpus": "MIMIC-IV v3.1 credentialed",
+  "seed": 42,
+  "folds": 5,
+  "n_boot": 1000,
+  "split": "subject_id (StratifiedGroupKFold); cluster bootstrap by subject_id",
+  "cohort": {
+    "n": 85242,
+    "n_pos": 9475,
+    "n_subjects": 65366
+  },
+  "task2": {
+    "a": {
+      "numeric_features": [
+        "anchor_age",
+        "charlson_history",
+        "heart_rate",
+        "sbp",
+        "dbp",
+        "mbp",
+        "resp_rate",
+        "spo2",
+        "temperature",
+        "creatinine",
+        "wbc",
+        "hemoglobin",
+        "platelet",
+        "glucose",
+        "sodium",
+        "potassium",
+        "bicarbonate",
+        "bun",
+        "lactate"
+      ],
+      "auroc": {
+        "point": 0.8627651660713882,
+        "lo95": 0.8592400291890364,
+        "hi95": 0.8666706938225952
+      },
+      "auprc": {
+        "point": 0.5449779389503482,
+        "lo95": 0.5347311675594695,
+        "hi95": 0.5554066070399465
+      },
+      "brier": 0.07093741149336547,
+      "calib_slope": 0.9950146950660742,
+      "calib_intercept": -0.04418634519645462
+    },
+    "b": {
+      "numeric_features": [
+        "anchor_age",
+        "charlson_history",
+        "n_diagnoses",
+        "heart_rate",
+        "sbp",
+        "dbp",
+        "mbp",
+        "resp_rate",
+        "spo2",
+        "temperature",
+        "creatinine",
+        "wbc",
+        "hemoglobin",
+        "platelet",
+        "glucose",
+        "sodium",
+        "potassium",
+        "bicarbonate",
+        "bun",
+        "lactate"
+      ],
+      "auroc": {
+        "point": 0.8756561257288829,
+        "lo95": 0.8720924956878551,
+        "hi95": 0.8789701861949715
+      },
+      "auprc": {
+        "point": 0.5536278388422269,
+        "lo95": 0.5435239562365538,
+        "hi95": 0.5635728485837581
+      },
+      "brier": 0.07016700380340224,
+      "calib_slope": 0.9894132979445229,
+      "calib_intercept": -0.05704524951716512
+    },
+    "c": {
+      "numeric_features": [
+        "anchor_age",
+        "n_diagnoses",
+        "heart_rate",
+        "sbp",
+        "dbp",
+        "mbp",
+        "resp_rate",
+        "spo2",
+        "temperature",
+        "creatinine",
+        "wbc",
+        "hemoglobin",
+        "platelet",
+        "glucose",
+        "sodium",
+        "potassium",
+        "bicarbonate",
+        "bun",
+        "lactate"
+      ],
+      "auroc": {
+        "point": 0.8747907731148956,
+        "lo95": 0.8713586866406614,
+        "hi95": 0.8781763487031122
+      },
+      "auprc": {
+        "point": 0.5525576123474206,
+        "lo95": 0.5424228677322542,
+        "hi95": 0.562987778590276
+      },
+      "brier": 0.07023984450840623,
+      "calib_slope": 0.9914298887459458,
+      "calib_intercept": -0.05087684301743852
+    }
+  },
+  "task3": {
+    "auroc_sole_feature": {
+      "point": 0.6930978945902506,
+      "lo95": 0.6875180476083607,
+      "hi95": 0.6985234202051185
+    },
+    "distribution_by_class": {
+      "survivors": {
+        "n": 75767,
+        "mean": 17.19781699156625,
+        "median": 16.0,
+        "q25": 11.0,
+        "q75": 22.0,
+        "q95": 34.0,
+        "max": 39.0
+      },
+      "deaths": {
+        "n": 9475,
+        "mean": 23.354722955145117,
+        "median": 23.0,
+        "q25": 17.0,
+        "q75": 30.0,
+        "q95": 39.0,
+        "max": 39.0
+      }
+    },
+    "spearman_ndx_vs_los": {
+      "rho": 0.5287370895278479,
+      "p": 0.0,
+      "los_source": "admissions.dischtime - admittime (days)"
+    }
+  },
+  "task5": {
+    "pipeline_filters_on": "charttime (loader.py:287-289 vitals, 311-313 labs)",
+    "labevents_gap_minutes": {
+      "q25": 48.0,
+      "q50": 72.0,
+      "q75": 116.0,
+      "q95": 349.0,
+      "q99": 530.0,
+      "mean": 107.54007036842425,
+      "n": 37872100.0,
+      "n_negative": 351.0
+    },
+    "chartevents_gap_minutes": {
+      "q25": 8.0,
+      "q50": 23.0,
+      "q75": 54.0,
+      "q95": 139.0,
+      "q99": 262.0,
+      "mean": 43.010263417312764,
+      "n": 54560385.0,
+      "n_negative": 779303.0
+    },
+    "arm_a_storetime": {
+      "auroc": {
+        "point": 0.8614792392438517,
+        "lo95": 0.8578606411219973,
+        "hi95": 0.8654013305547631
+      },
+      "cohort": {
+        "n": 85242,
+        "n_pos": 9475,
+        "n_subjects": 65366
+      },
+      "auroc_delta_vs_charttime": -0.0012859268275364766
+    }
+  },
+  "wall_seconds": 2711.5
+}

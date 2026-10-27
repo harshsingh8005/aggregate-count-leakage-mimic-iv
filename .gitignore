@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+# Never commit MIMIC-IV data or anything row-level.
+*.csv
+*.csv.gz
+*.parquet
+physionet.org/

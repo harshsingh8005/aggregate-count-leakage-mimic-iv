@@ -1,0 +1,6 @@
+[02:25:01] TASK 4: build base cohort (audited charlson) + first-admission flag
+[02:26:36]   first-admissions in cohort=43919, of which nonzero charlson=0 (expected 0 if temporal logic correct)
+[02:26:36] TASK 5b: storetime exclusion counts (heavy scans)
+[02:28:23]   labevents: in-window=1753264 excluded_by_storetime=42059
+[02:31:58]   chartevents: in-window=13774471 excluded_by_storetime=312045
+[02:31:58] DONE -> task4_task5b.json

@@ -1,0 +1,23 @@
+[20:16:42] cohort n=85,242 subjects=65,366 deaths=9,475
+[20:16:51] cohort n=85,242 subjects=65,366 deaths=9,475
+[20:16:51] spo2: scanning itemids [220277]
+[20:21:05] spo2: done cov=0.9979 auroc=0.4402 oriented=0.5598 rows=2,162,410 wall_s=254.3
+[20:21:05] run complete: 1/7 vitals done, total wall_s=255.5
+[20:21:22] cohort n=85,242 subjects=65,366 deaths=9,475
+[20:21:22] heart_rate: scanning itemids [220045]
+[20:22:36] crash rehearsal: previous run killed mid-heart_rate (SIGKILL); re-run below must skip spo2 and redo heart_rate
+[20:22:38] cohort n=85,242 subjects=65,366 deaths=9,475
+[20:22:38] heart_rate: scanning itemids [220045]
+[20:26:51] heart_rate: done cov=0.9991 auroc=0.6162 oriented=0.6162 rows=2,212,345 wall_s=252.3
+[20:26:51] sbp: scanning itemids [220050, 220179]
+[20:31:03] sbp: done cov=0.9950 auroc=0.3725 oriented=0.6275 rows=2,166,177 wall_s=251.9
+[20:31:03] dbp: scanning itemids [220051, 220180]
+[20:35:14] dbp: done cov=0.9950 auroc=0.4060 oriented=0.5940 rows=2,165,619 wall_s=251.8
+[20:35:14] mbp: scanning itemids [220052, 220181]
+[20:39:27] mbp: done cov=0.9949 auroc=0.3834 oriented=0.6166 rows=2,163,918 wall_s=253.0
+[20:39:27] resp_rate: scanning itemids [220210, 224690]
+[20:43:45] resp_rate: done cov=0.9973 auroc=0.6745 oriented=0.6745 rows=2,320,653 wall_s=257.5
+[20:43:45] spo2: already done, skipping
+[20:43:45] temperature: scanning itemids [223762, 223761]
+[20:47:59] temperature: done cov=0.9735 auroc=0.4461 oriented=0.5539 rows=619,794 wall_s=254.3
+[20:47:59] run complete: 7/7 vitals done, total wall_s=1523.1

@@ -1,0 +1,13 @@
+{
+  "cohort": {
+    "n": 85242,
+    "subjects": 65366,
+    "deaths": 9475,
+    "prevalence": 0.111154
+  },
+  "auroc_single_feature": {
+    "distinct_code_count": 0.6941,
+    "length_of_stay": 0.4479,
+    "age": 0.6122
+  }
+}

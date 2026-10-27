@@ -1,0 +1,44 @@
+{
+  "n": 85242,
+  "n_deaths": 9475,
+  "decedents_with_dischtime_eq_deathtime": 8818,
+  "decedents_with_dischtime_eq_deathtime_frac": 0.9315,
+  "fixed_horizon": {
+    "7d": {
+      "events": 5166,
+      "auroc_count": 0.5681
+    },
+    "14d": {
+      "events": 7197,
+      "auroc_count": 0.628
+    },
+    "30d": {
+      "events": 8839,
+      "auroc_count": 0.6755
+    },
+    "open_ended": {
+      "events": 9475,
+      "auroc_count": 0.6941
+    }
+  },
+  "published": {
+    "n": 85242,
+    "deaths": 9475,
+    "marginal_count": 0.6941,
+    "marginal_los": 0.4479,
+    "cond_count_given_los_5": 0.7397,
+    "cond_los_given_los_5": 0.4442,
+    "cond_count_given_los_500": 0.7522,
+    "cond_los_given_los_500": 0.5069
+  },
+  "alive_at_24h": {
+    "n": 81052,
+    "deaths": 7659,
+    "marginal_count": 0.7288,
+    "marginal_los": 0.5192,
+    "cond_count_given_los_5": 0.7389,
+    "cond_los_given_los_5": 0.487,
+    "cond_count_given_los_500": 0.7421,
+    "cond_los_given_los_500": 0.5029
+  }
+}

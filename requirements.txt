@@ -1,0 +1,7 @@
+# Versions installed on the machine that produced the shipped outputs (Python 3.11.0).
+duckdb==1.5.2
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.8.0
+lightgbm==4.6.0

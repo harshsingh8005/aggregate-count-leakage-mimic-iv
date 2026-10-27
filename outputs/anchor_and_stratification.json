@@ -1,0 +1,30 @@
+{
+  "deaths_within_24h": 1767,
+  "deaths_within_48h": 2887,
+  "as published": {
+    "n": 85242,
+    "auroc_los": 0.4479,
+    "auroc_count": 0.6941
+  },
+  "alive at 24h": {
+    "n": 81052,
+    "auroc_los": 0.5192,
+    "auroc_count": 0.7288
+  },
+  "alive at 48h": {
+    "n": 75188,
+    "auroc_los": 0.5609,
+    "auroc_count": 0.7381
+  },
+  "conditional_1": 0.6941,
+  "conditional_5": 0.7397,
+  "conditional_20": 0.7491,
+  "conditional_100": 0.7517,
+  "conditional_500": 0.7522,
+  "auroc_los_recoded": 0.6492,
+  "rho_count_losrisk": 0.1544,
+  "q1": {
+    "dec": 17.86,
+    "sur": 11.06
+  }
+}

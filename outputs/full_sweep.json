@@ -1,0 +1,167 @@
+{
+  "n": 85242,
+  "deaths": 9475,
+  "features": [
+    {
+      "f": "bun",
+      "cov": 0.9683,
+      "auroc": 0.7006,
+      "oriented": 0.7006,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "lactate",
+      "cov": 0.5378,
+      "auroc": 0.6803,
+      "oriented": 0.6803,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "resp_rate",
+      "cov": 0.9973,
+      "auroc": 0.6745,
+      "oriented": 0.6745,
+      "source": "vitals_sweep.py"
+    },
+    {
+      "f": "creatinine",
+      "cov": 0.9685,
+      "auroc": 0.6672,
+      "oriented": 0.6672,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "bicarbonate",
+      "cov": 0.9683,
+      "auroc": 0.3521,
+      "oriented": 0.6479,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "sbp",
+      "cov": 0.995,
+      "auroc": 0.3725,
+      "oriented": 0.6275,
+      "source": "vitals_sweep.py"
+    },
+    {
+      "f": "mbp",
+      "cov": 0.9949,
+      "auroc": 0.3834,
+      "oriented": 0.6166,
+      "source": "vitals_sweep.py"
+    },
+    {
+      "f": "heart_rate",
+      "cov": 0.9991,
+      "auroc": 0.6162,
+      "oriented": 0.6162,
+      "source": "vitals_sweep.py"
+    },
+    {
+      "f": "anchor_age",
+      "cov": 1.0,
+      "auroc": 0.6122,
+      "oriented": 0.6122,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "wbc",
+      "cov": 0.9621,
+      "auroc": 0.5973,
+      "oriented": 0.5973,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "dbp",
+      "cov": 0.995,
+      "auroc": 0.406,
+      "oriented": 0.594,
+      "source": "vitals_sweep.py"
+    },
+    {
+      "f": "admission_location",
+      "cov": 1.0,
+      "auroc": 0.59,
+      "oriented": 0.59,
+      "source": "categorical_sweep.py"
+    },
+    {
+      "f": "hemoglobin",
+      "cov": 0.9624,
+      "auroc": 0.4129,
+      "oriented": 0.5871,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "glucose",
+      "cov": 0.9692,
+      "auroc": 0.5825,
+      "oriented": 0.5825,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "admission_type",
+      "cov": 1.0,
+      "auroc": 0.5813,
+      "oriented": 0.5813,
+      "source": "categorical_sweep.py"
+    },
+    {
+      "f": "insurance",
+      "cov": 0.9832,
+      "auroc": 0.5652,
+      "oriented": 0.5652,
+      "source": "categorical_sweep.py"
+    },
+    {
+      "f": "potassium",
+      "cov": 0.9686,
+      "auroc": 0.5629,
+      "oriented": 0.5629,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "platelet",
+      "cov": 0.9626,
+      "auroc": 0.4388,
+      "oriented": 0.5612,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "spo2",
+      "cov": 0.9979,
+      "auroc": 0.4402,
+      "oriented": 0.5598,
+      "source": "vitals_sweep.py"
+    },
+    {
+      "f": "temperature",
+      "cov": 0.9735,
+      "auroc": 0.4461,
+      "oriented": 0.5539,
+      "source": "vitals_sweep.py"
+    },
+    {
+      "f": "charlson_history",
+      "cov": 1.0,
+      "auroc": 0.551,
+      "oriented": 0.551,
+      "source": "comorbidity_isolation.py"
+    },
+    {
+      "f": "sodium",
+      "cov": 0.9689,
+      "auroc": 0.5012,
+      "oriented": 0.5012,
+      "source": "isolation_sweep.py"
+    },
+    {
+      "f": "gender",
+      "cov": 1.0,
+      "auroc": 0.5005,
+      "oriented": 0.5005,
+      "source": "categorical_sweep.py"
+    }
+  ]
+}

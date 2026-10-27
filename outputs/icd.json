@@ -1,0 +1,19 @@
+{
+  "ICD-9 only": {
+    "n": 41395,
+    "mean_codes": 15.85,
+    "mortality": 0.1048,
+    "auroc": 0.6562
+  },
+  "ICD-10 only": {
+    "n": 43823,
+    "mean_codes": 19.81,
+    "mortality": 0.1171,
+    "auroc": 0.729
+  },
+  "withdrawn_suppression_see_appendix": {
+    "count": 0.6941,
+    "los": 0.4479,
+    "count_resid_los": 0.7496
+  }
+}

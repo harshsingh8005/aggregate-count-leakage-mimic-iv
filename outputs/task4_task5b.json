@@ -1,0 +1,23 @@
+{
+  "task4": {
+    "cohort_n": 85242,
+    "n_first_admissions_in_cohort": 43919,
+    "n_first_admissions_with_nonzero_charlson": 0,
+    "charlson_history_nonzero_overall": 36319,
+    "charlson_history_zero_overall": 48923,
+    "charlson_history_max": 22,
+    "charlson_history_mean": 1.8323127096970977,
+    "predicate": "loader.py:221 keep prior iff prior_hadm != cur_hadm and dischtime < admittime (strict)"
+  },
+  "task5b": {
+    "labevents": {
+      "in_charttime_window": 1753264,
+      "excluded_by_storetime": 42059
+    },
+    "chartevents": {
+      "in_charttime_window": 13774471,
+      "excluded_by_storetime": 312045
+    },
+    "definition": "rows with charttime in [intime, intime+24h] but storetime > intime+24h"
+  }
+}

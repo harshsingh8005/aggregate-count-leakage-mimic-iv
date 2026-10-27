@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "A Count Is Not a Code: Aggregate Label Leakage That Survives Per-Code De-Leaking on MIMIC-IV"
+authors:
+  - family-names: Singh
+    given-names: Harsh
+    orcid: "https://orcid.org/0009-0008-6367-7293"
+type: software
+license: MIT
+preferred-citation:
+  type: article
+  title: "A Count Is Not a Code: Aggregate Label Leakage That Survives Per-Code De-Leaking on MIMIC-IV"
+  authors:
+    - family-names: Singh
+      given-names: Harsh
+      orcid: "https://orcid.org/0009-0008-6367-7293"
+  year: 2026
+  journal: "SSRN preprint"
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7676958"

@@ -1,0 +1,48 @@
+{
+  "corpus": "MIMIC-IV v3.1 credentialed",
+  "seed": 42,
+  "n_boot": 1000,
+  "design": "identical StratifiedGroupKFold split across arms; each bootstrap replicate resamples subjects once and scores both arms on that same resample",
+  "cohort": {
+    "n": 85242,
+    "n_pos": 9475,
+    "n_subjects": 65366
+  },
+  "delta_b_minus_a_auroc": {
+    "point": 0.01289,
+    "lo95": 0.01115,
+    "hi95": 0.01467,
+    "p_two_sided": 0.0,
+    "n_replicates": 1000,
+    "frac_reversing_sign": 0.0,
+    "p_two_sided_note": "0 of 1000 replicates reverse sign, so the bootstrap p is below the resolution of the replicate count. The manuscript reports p < 0.002 (= 2/1000), which is the smallest value this design can support."
+  },
+  "delta_b_minus_a_auprc": {
+    "point": 0.00865,
+    "lo95": 0.00615,
+    "hi95": 0.01131,
+    "p_two_sided": 0.0,
+    "n_replicates": 1000,
+    "frac_reversing_sign": 0.0,
+    "p_two_sided_note": "0 of 1000 replicates reverse sign, so the bootstrap p is below the resolution of the replicate count. The manuscript reports p < 0.002 (= 2/1000), which is the smallest value this design can support."
+  },
+  "delta_c_minus_a_auroc": {
+    "point": 0.01203,
+    "lo95": 0.01019,
+    "hi95": 0.01374,
+    "p_two_sided": 0.0,
+    "n_replicates": 1000,
+    "frac_reversing_sign": 0.0,
+    "p_two_sided_note": "0 of 1000 replicates reverse sign, so the bootstrap p is below the resolution of the replicate count. The manuscript reports p < 0.002 (= 2/1000), which is the smallest value this design can support."
+  },
+  "delta_c_minus_a_auprc": {
+    "point": 0.00758,
+    "lo95": 0.00497,
+    "hi95": 0.01032,
+    "p_two_sided": 0.0,
+    "n_replicates": 1000,
+    "frac_reversing_sign": 0.0,
+    "p_two_sided_note": "0 of 1000 replicates reverse sign, so the bootstrap p is below the resolution of the replicate count. The manuscript reports p < 0.002 (= 2/1000), which is the smallest value this design can support."
+  },
+  "wall_seconds": 1853.7
+}

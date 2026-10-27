@@ -1,0 +1,58 @@
+[16:29:24] E1: cohort, flow, single time origin
+[16:29:29]   GATE PASS  cohort n: submitted 85242  recomputed 85242
+[16:29:29]   GATE PASS  deaths: submitted 9475  recomputed 9475
+[16:29:29]   cohort_n: 85,242
+[16:29:29]   cohort_deaths: 9,475
+[16:29:29]   cohort_survivors: 75,767
+[16:29:29]   died_within_24h_of_icu_admission: 1,767
+[16:29:29]     of which hospital_expire_flag=1: 1,767
+[16:29:29]     of which death time before ICU admission: 20
+[16:29:29]   decedents_discharged_within_24h_not_died_within_24h: 49
+[16:29:29]     of which no recorded death time: suppressed (cell below 10, or its complement)
+[16:29:29]     of which death recorded after discharge: suppressed (cell below 10, or its complement)
+[16:29:29]     of which other: 0
+[16:29:29]   survivors_discharged_within_24h: 2,374
+[16:29:29]   survivors_with_a_death_time (expect 0): 0
+[16:29:29]   decedents_with_no_death_time: suppressed (cell below 10, or its complement)
+[16:29:29]   anchor_n: 81,052
+[16:29:29]   anchor_deaths: 7,659
+[16:29:29]   anchor_survivors: 73,393
+[16:29:29]   GATE PASS  died within 24 h of ICU admission: submitted 1767  recomputed 1767
+[16:29:29]   GATE PASS  24-h cohort n: submitted 81052  recomputed 81052
+[16:29:29]   GATE PASS  24-h cohort deaths: submitted 7659  recomputed 7659
+[16:29:29]   GATE PASS  count AUROC, submitted cohort: submitted 0.6941  recomputed 0.6941
+[16:29:29]   GATE PASS  count AUROC, 24-h cohort: submitted 0.7288  recomputed 0.7288
+[16:29:29]   GATE PASS  horizon 7d from hospital admission (events): submitted 5166  recomputed 5166
+[16:29:29]   GATE PASS  horizon 7d from hospital admission (AUROC): submitted 0.5681  recomputed 0.5681
+[16:29:29]   GATE PASS  horizon 14d from hospital admission (events): submitted 7197  recomputed 7197
+[16:29:29]   GATE PASS  horizon 14d from hospital admission (AUROC): submitted 0.628  recomputed 0.628
+[16:29:29]   GATE PASS  horizon 30d from hospital admission (events): submitted 8839  recomputed 8839
+[16:29:29]   GATE PASS  horizon 30d from hospital admission (AUROC): submitted 0.6755  recomputed 0.6755
+[16:29:29]   horizons from t0, 24-h cohort: {'7d': {'events': 4081, 'auroc_count': 0.6345}, '14d': {'events': 5943, 'auroc_count': 0.681}, '30d': {'events': 7204, 'auroc_count': 0.7157}, 'in_hospital': {'events': 7659, 'auroc_count': 0.7288}}
+[16:29:29]   GATE PASS  24-h cohort: count | hospital-LOS strata k=5: submitted 0.7389  recomputed 0.7389
+[16:29:29]   GATE PASS  24-h cohort: LOS | LOS strata k=5 (null control): submitted 0.487  recomputed 0.487
+[16:29:30]   GATE PASS  24-h cohort: count | hospital-LOS strata k=500: submitted 0.7421  recomputed 0.7421
+[16:29:30]   GATE PASS  24-h cohort: LOS | LOS strata k=500 (null control): submitted 0.5029  recomputed 0.5029
+[16:29:31]   GATE PASS  submitted cohort: recoded LOS alone: submitted 0.649  recomputed 0.649
+[16:29:31]   GATE PASS  submitted cohort: OOF recoded LOS + count: submitted 0.7691  recomputed 0.7691
+[16:29:35]   24-h cohort, LOS from t0: {'n': 81052, 'deaths': 7659, 'auroc_los_t0': 0.4906, 'auroc_count': 0.7288, 'spearman_count_los_t0': 0.5086, 'cond_count_given_los_t0_1': 0.7288, 'cond_los_t0_given_los_t0_1': 0.4906, 'cond_count_given_los_t0_5': 0.7464, 'cond_los_t0_given_los_t0_5': 0.4822, 'cond_count_given_los_t0_20': 0.7482, 'cond_los_t0_given_los_t0_20': 0.4935, 'cond_count_given_los_t0_100': 0.7472, 'cond_los_t0_given_los_t0_100': 0.4977, 'cond_count_given_los_t0_500': 0.7473, 'cond_los_t0_given_los_t0_500': 0.4978, 'auroc_recoded_los': 0.616, 'cond_count_given_recoded_values': 0.7493, 'oof_recoded_los': 0.6158, 'oof_recoded_los_plus_count': 0.7509}
+[16:29:47]   GATE PASS  chronic-only count: submitted 0.6453  recomputed 0.6453
+[16:29:47]   GATE PASS  non-chronic count: submitted 0.6794  recomputed 0.6794
+[16:29:47]   GATE PASS  C(chronic | total): submitted 0.5489  recomputed 0.5489
+[16:29:47]   GATE PASS  C(total | chronic): submitted 0.6464  recomputed 0.6464
+[16:29:47]   Appendix C, 24-h cohort: {'auroc_chronic_only': 0.661, 'auroc_nonchronic': 0.713, 'auroc_random_subset_same_rate': [0.6525, 0.6533, 0.6493, 0.6494, 0.6478, 0.6499, 0.6485, 0.6491, 0.6488, 0.6488, 0.646, 0.6483, 0.6486, 0.6505, 0.6537, 0.6529, 0.6487, 0.6487, 0.6505, 0.6493], 'random_subset_min_max_mean': [0.646, 0.6537, 0.6497], 'cond_chronic_given_total': 0.5488, 'cond_total_given_chronic': 0.6853, 'mean_chronic_codes_deaths': 3.98, 'mean_chronic_codes_survivors': 2.67}
+[16:29:47]   GATE PASS  ICD-9 n: submitted 41395  recomputed 41395
+[16:29:47]   GATE PASS  ICD-9 AUROC: submitted 0.6562  recomputed 0.6562
+[16:29:47]   GATE PASS  ICD-10 n: submitted 43823  recomputed 43823
+[16:29:47]   GATE PASS  ICD-10 AUROC: submitted 0.729  recomputed 0.729
+[16:29:47]   ICD split: {'icd9_submitted': {'n': 41395, 'auroc': 0.6562}, 'icd9_24h_cohort': {'n': 39430, 'deaths': 3444, 'auroc': 0.6965, 'mean_codes': 16.08}, 'icd10_submitted': {'n': 43823, 'auroc': 0.729}, 'icd10_24h_cohort': {'n': 41599, 'deaths': 4211, 'auroc': 0.7591, 'mean_codes': 20.14}}
+[16:29:47] E2: other admission-level counts on the 24-h cohort
+[16:30:41]   procedure codes (distinct): whole 0.6381  24h 0.5772  (1.3 s)
+[16:31:48]   prescriptions (rows): whole 0.6828  24h 0.6307  (25.7 s)
+[16:32:47]   prescriptions (distinct drugs): whole 0.6802  24h 0.6107  (25.5 s)
+[16:33:27]   microbiology specimens (distinct): whole 0.7025  24h 0.637  (7.7 s)
+[16:36:51]   laboratory tests (rows): whole 0.6733  24h 0.6457  (167.9 s)
+[16:38:24]   provider orders, POE (rows): whole 0.6568  24h 0.6054  (50.3 s)
+[16:39:12]   radiology notes: whole 0.5991  24h 0.5865  (22.0 s)
+[16:39:12] 27/27 reproduction gates passed
+[16:39:12] DONE in 588.8 s -> outputs/revision/extended_checks.json

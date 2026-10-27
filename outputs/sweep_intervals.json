@@ -1,0 +1,36 @@
+{
+  "seed": 42,
+  "n_boot": 400,
+  "n": 85242,
+  "design": "resamples subject_id with replacement",
+  "distinct_code_count": {
+    "auroc": 0.6941,
+    "lo95": 0.6894,
+    "hi95": 0.6995,
+    "coverage": 1.0
+  },
+  "creatinine": {
+    "auroc_oriented": 0.6672,
+    "lo95": 0.6605,
+    "hi95": 0.6738,
+    "coverage": 0.9685
+  },
+  "bicarbonate": {
+    "auroc_oriented": 0.6479,
+    "lo95": 0.6404,
+    "hi95": 0.6547,
+    "coverage": 0.9682
+  },
+  "bun": {
+    "auroc_oriented": 0.7006,
+    "lo95": 0.6946,
+    "hi95": 0.7058,
+    "coverage": 0.9682
+  },
+  "lactate": {
+    "auroc_oriented": 0.6803,
+    "lo95": 0.6728,
+    "hi95": 0.6867,
+    "coverage": 0.5378
+  }
+}

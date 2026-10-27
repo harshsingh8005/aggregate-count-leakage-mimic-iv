@@ -1,0 +1,39 @@
+{
+  "n": 85242,
+  "deaths": 9475,
+  "clip": [
+    1,
+    80
+  ],
+  "itemids": {
+    "220210": {
+      "label": "Respiratory Rate",
+      "coverage": 0.997,
+      "admissions": 84986,
+      "deaths": 9443,
+      "death_rate": 0.1111,
+      "rows": 2176914,
+      "auroc": 0.6701,
+      "oriented": 0.6701
+    },
+    "224690": {
+      "label": "Respiratory Rate (Total)",
+      "coverage": 0.3791,
+      "admissions": 32316,
+      "deaths": 5602,
+      "death_rate": 0.1734,
+      "rows": 143739,
+      "auroc": 0.7069,
+      "oriented": 0.7069
+    }
+  },
+  "common_support": {
+    "admissions": 32286,
+    "auroc_220210": 0.6873,
+    "oriented_220210": 0.6873,
+    "deaths": 5593,
+    "auroc_224690": 0.7067,
+    "oriented_224690": 0.7067,
+    "death_rate": 0.1732
+  }
+}

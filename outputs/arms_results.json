@@ -1,0 +1,119 @@
+{
+  "cohort": {
+    "n": 85242,
+    "n_pos": 9475,
+    "n_subjects": 65366
+  },
+  "arms": {
+    "a": {
+      "numeric_features": [
+        "anchor_age",
+        "charlson_history",
+        "heart_rate",
+        "sbp",
+        "dbp",
+        "mbp",
+        "resp_rate",
+        "spo2",
+        "temperature",
+        "creatinine",
+        "wbc",
+        "hemoglobin",
+        "platelet",
+        "glucose",
+        "sodium",
+        "potassium",
+        "bicarbonate",
+        "bun",
+        "lactate"
+      ],
+      "auroc": {
+        "point": 0.8627651660713882,
+        "lo95": 0.8592400291890364,
+        "hi95": 0.8666706938225952
+      },
+      "auprc": {
+        "point": 0.5449779389503482,
+        "lo95": 0.5347311675594695,
+        "hi95": 0.5554066070399465
+      },
+      "brier": 0.07093741149336547,
+      "calib_slope": 0.9950146950660742,
+      "calib_intercept": -0.04418634519645462
+    },
+    "b": {
+      "numeric_features": [
+        "anchor_age",
+        "charlson_history",
+        "n_diagnoses",
+        "heart_rate",
+        "sbp",
+        "dbp",
+        "mbp",
+        "resp_rate",
+        "spo2",
+        "temperature",
+        "creatinine",
+        "wbc",
+        "hemoglobin",
+        "platelet",
+        "glucose",
+        "sodium",
+        "potassium",
+        "bicarbonate",
+        "bun",
+        "lactate"
+      ],
+      "auroc": {
+        "point": 0.8756561257288829,
+        "lo95": 0.8720924956878551,
+        "hi95": 0.8789701861949715
+      },
+      "auprc": {
+        "point": 0.5536278388422269,
+        "lo95": 0.5435239562365538,
+        "hi95": 0.5635728485837581
+      },
+      "brier": 0.07016700380340224,
+      "calib_slope": 0.9894132979445229,
+      "calib_intercept": -0.05704524951716512
+    },
+    "c": {
+      "numeric_features": [
+        "anchor_age",
+        "n_diagnoses",
+        "heart_rate",
+        "sbp",
+        "dbp",
+        "mbp",
+        "resp_rate",
+        "spo2",
+        "temperature",
+        "creatinine",
+        "wbc",
+        "hemoglobin",
+        "platelet",
+        "glucose",
+        "sodium",
+        "potassium",
+        "bicarbonate",
+        "bun",
+        "lactate"
+      ],
+      "auroc": {
+        "point": 0.8747907731148956,
+        "lo95": 0.8713586866406614,
+        "hi95": 0.8781763487031122
+      },
+      "auprc": {
+        "point": 0.5525576123474206,
+        "lo95": 0.5424228677322542,
+        "hi95": 0.562987778590276
+      },
+      "brier": 0.07023984450840623,
+      "calib_slope": 0.9914298887459458,
+      "calib_intercept": -0.05087684301743852
+    }
+  },
+  "wall_seconds": 1963.5
+}

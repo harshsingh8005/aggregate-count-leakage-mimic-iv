@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "n": 85242,
+  "auroc_los_marginal": 0.4479,
+  "cond_los_given_los_5": 0.4442,
+  "cond_los_given_los_500": 0.5069,
+  "auroc_recoded_los": 0.649,
+  "cond_count_given_los_bins_k20": 0.7491,
+  "cond_count_given_recoded_values": 0.747,
+  "auroc_count_marginal": 0.6941,
+  "oof_recoded_los": 0.649,
+  "oof_recoded_los_plus_count": 0.7691,
+  "auroc_chronic_only_count": 0.6453,
+  "mean_chronic_codes_deaths": 3.8,
+  "mean_chronic_codes_survivors": 2.63,
+  "auroc_nonchronic_count": 0.6794,
+  "chronic_retention_rate": 0.1544,
+  "auroc_random_subset_same_rate": [
+    0.6237,
+    0.6258,
+    0.6279
+  ],
+  "cond_chronic_given_total": 0.5489,
+  "cond_total_given_chronic": 0.6464
+}

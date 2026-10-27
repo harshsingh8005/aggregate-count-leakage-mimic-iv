@@ -1,0 +1,84 @@
+{
+  "spo2": {
+    "status": "done",
+    "itemids": [
+      220277
+    ],
+    "rows": 2162410,
+    "wall_s": 254.3,
+    "cov": 0.9979,
+    "auroc": 0.4402,
+    "oriented": 0.5598
+  },
+  "heart_rate": {
+    "status": "done",
+    "itemids": [
+      220045
+    ],
+    "rows": 2212345,
+    "wall_s": 252.3,
+    "cov": 0.9991,
+    "auroc": 0.6162,
+    "oriented": 0.6162
+  },
+  "sbp": {
+    "status": "done",
+    "itemids": [
+      220050,
+      220179
+    ],
+    "rows": 2166177,
+    "wall_s": 251.9,
+    "cov": 0.995,
+    "auroc": 0.3725,
+    "oriented": 0.6275
+  },
+  "dbp": {
+    "status": "done",
+    "itemids": [
+      220051,
+      220180
+    ],
+    "rows": 2165619,
+    "wall_s": 251.8,
+    "cov": 0.995,
+    "auroc": 0.406,
+    "oriented": 0.594
+  },
+  "mbp": {
+    "status": "done",
+    "itemids": [
+      220052,
+      220181
+    ],
+    "rows": 2163918,
+    "wall_s": 253.0,
+    "cov": 0.9949,
+    "auroc": 0.3834,
+    "oriented": 0.6166
+  },
+  "resp_rate": {
+    "status": "done",
+    "itemids": [
+      220210,
+      224690
+    ],
+    "rows": 2320653,
+    "wall_s": 257.5,
+    "cov": 0.9973,
+    "auroc": 0.6745,
+    "oriented": 0.6745
+  },
+  "temperature": {
+    "status": "done",
+    "itemids": [
+      223762,
+      223761
+    ],
+    "rows": 619794,
+    "wall_s": 254.3,
+    "cov": 0.9735,
+    "auroc": 0.4461,
+    "oriented": 0.5539
+  }
+}

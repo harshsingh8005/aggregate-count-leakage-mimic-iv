@@ -1,0 +1,11 @@
+{
+  "n": 85242,
+  "n_deaths": 9475,
+  "nonzero": 36319,
+  "nonzero_frac": 0.4261,
+  "mean": 1.8323,
+  "max": 22,
+  "auroc_solo": 0.551,
+  "auroc_on_nonzero_subset": 0.6015,
+  "note": "distribution should match Appendix F (36,319 / 42.6% / 1.83 / 22); agreement is the fidelity check on this reimplementation"
+}

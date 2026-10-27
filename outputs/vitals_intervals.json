@@ -1,0 +1,82 @@
+{
+  "seed": 42,
+  "n_boot": 400,
+  "n": 85242,
+  "design": "resamples subject_id with replacement",
+  "resp_rate": {
+    "auroc_oriented": 0.6745,
+    "lo95": 0.6682,
+    "hi95": 0.6804,
+    "coverage": 0.9973,
+    "itemids": [
+      220210,
+      224690
+    ]
+  },
+  "sbp": {
+    "auroc_oriented": 0.6275,
+    "lo95": 0.6212,
+    "hi95": 0.6332,
+    "coverage": 0.995,
+    "itemids": [
+      220050,
+      220179
+    ]
+  },
+  "heart_rate": {
+    "auroc_oriented": 0.6162,
+    "lo95": 0.6099,
+    "hi95": 0.6225,
+    "coverage": 0.9991,
+    "itemids": [
+      220045
+    ]
+  },
+  "creatinine": {
+    "auroc_oriented": 0.6672,
+    "lo95": 0.6607,
+    "hi95": 0.6741,
+    "coverage": 0.9685,
+    "itemids": [
+      50912
+    ],
+    "extraction": "isolation_sweep.py recipe (inclusive 24h window, clipped admission mean)"
+  },
+  "bicarbonate": {
+    "auroc_oriented": 0.6479,
+    "lo95": 0.6407,
+    "hi95": 0.6542,
+    "coverage": 0.9683,
+    "itemids": [
+      50882
+    ],
+    "extraction": "isolation_sweep.py recipe (inclusive 24h window, clipped admission mean)"
+  },
+  "bun": {
+    "auroc_oriented": 0.7006,
+    "lo95": 0.6947,
+    "hi95": 0.7065,
+    "coverage": 0.9683,
+    "itemids": [
+      51006
+    ],
+    "extraction": "isolation_sweep.py recipe (inclusive 24h window, clipped admission mean)"
+  },
+  "lactate": {
+    "auroc_oriented": 0.6803,
+    "lo95": 0.6718,
+    "hi95": 0.6871,
+    "coverage": 0.5378,
+    "itemids": [
+      50813
+    ],
+    "extraction": "isolation_sweep.py recipe (inclusive 24h window, clipped admission mean)"
+  },
+  "distinct_code_count": {
+    "auroc": 0.6941,
+    "lo95": 0.6894,
+    "hi95": 0.6995,
+    "coverage": 1.0,
+    "extraction": "COUNT(DISTINCT icd_code) per hadm_id from diagnoses_icd"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "design": "cross-fitted per-level death rate, StratifiedGroupKFold n_splits=5 seed=42 grouped on subject_id",
+  "n": 85242,
+  "deaths": 9475,
+  "categoricals": [
+    {
+      "f": "gender",
+      "levels": 2,
+      "cov": 1.0,
+      "auroc": 0.5005,
+      "oriented": 0.5005
+    },
+    {
+      "f": "admission_type",
+      "levels": 9,
+      "cov": 1.0,
+      "auroc": 0.5813,
+      "oriented": 0.5813
+    },
+    {
+      "f": "admission_location",
+      "levels": 11,
+      "cov": 1.0,
+      "auroc": 0.59,
+      "oriented": 0.59
+    },
+    {
+      "f": "insurance",
+      "levels": 5,
+      "cov": 0.9832,
+      "auroc": 0.5652,
+      "oriented": 0.5652
+    }
+  ],
+  "wall_s": 15.5
+}

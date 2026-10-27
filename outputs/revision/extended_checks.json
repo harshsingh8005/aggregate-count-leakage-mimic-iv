@@ -1,0 +1,538 @@
+{
+ "corpus": "MIMIC-IV v3.1",
+ "aggregate_only": true,
+ "gates": [
+  {
+   "gate": "cohort n",
+   "submitted": 85242,
+   "recomputed": 85242,
+   "pass": true
+  },
+  {
+   "gate": "deaths",
+   "submitted": 9475,
+   "recomputed": 9475,
+   "pass": true
+  },
+  {
+   "gate": "died within 24 h of ICU admission",
+   "submitted": 1767,
+   "recomputed": 1767,
+   "pass": true
+  },
+  {
+   "gate": "24-h cohort n",
+   "submitted": 81052,
+   "recomputed": 81052,
+   "pass": true
+  },
+  {
+   "gate": "24-h cohort deaths",
+   "submitted": 7659,
+   "recomputed": 7659,
+   "pass": true
+  },
+  {
+   "gate": "count AUROC, submitted cohort",
+   "submitted": 0.6941,
+   "recomputed": 0.6941,
+   "pass": true
+  },
+  {
+   "gate": "count AUROC, 24-h cohort",
+   "submitted": 0.7288,
+   "recomputed": 0.7288,
+   "pass": true
+  },
+  {
+   "gate": "horizon 7d from hospital admission (events)",
+   "submitted": 5166,
+   "recomputed": 5166,
+   "pass": true
+  },
+  {
+   "gate": "horizon 7d from hospital admission (AUROC)",
+   "submitted": 0.5681,
+   "recomputed": 0.5681,
+   "pass": true
+  },
+  {
+   "gate": "horizon 14d from hospital admission (events)",
+   "submitted": 7197,
+   "recomputed": 7197,
+   "pass": true
+  },
+  {
+   "gate": "horizon 14d from hospital admission (AUROC)",
+   "submitted": 0.628,
+   "recomputed": 0.628,
+   "pass": true
+  },
+  {
+   "gate": "horizon 30d from hospital admission (events)",
+   "submitted": 8839,
+   "recomputed": 8839,
+   "pass": true
+  },
+  {
+   "gate": "horizon 30d from hospital admission (AUROC)",
+   "submitted": 0.6755,
+   "recomputed": 0.6755,
+   "pass": true
+  },
+  {
+   "gate": "24-h cohort: count | hospital-LOS strata k=5",
+   "submitted": 0.7389,
+   "recomputed": 0.7389,
+   "pass": true
+  },
+  {
+   "gate": "24-h cohort: LOS | LOS strata k=5 (null control)",
+   "submitted": 0.487,
+   "recomputed": 0.487,
+   "pass": true
+  },
+  {
+   "gate": "24-h cohort: count | hospital-LOS strata k=500",
+   "submitted": 0.7421,
+   "recomputed": 0.7421,
+   "pass": true
+  },
+  {
+   "gate": "24-h cohort: LOS | LOS strata k=500 (null control)",
+   "submitted": 0.5029,
+   "recomputed": 0.5029,
+   "pass": true
+  },
+  {
+   "gate": "submitted cohort: recoded LOS alone",
+   "submitted": 0.649,
+   "recomputed": 0.649,
+   "pass": true
+  },
+  {
+   "gate": "submitted cohort: OOF recoded LOS + count",
+   "submitted": 0.7691,
+   "recomputed": 0.7691,
+   "pass": true
+  },
+  {
+   "gate": "chronic-only count",
+   "submitted": 0.6453,
+   "recomputed": 0.6453,
+   "pass": true
+  },
+  {
+   "gate": "non-chronic count",
+   "submitted": 0.6794,
+   "recomputed": 0.6794,
+   "pass": true
+  },
+  {
+   "gate": "C(chronic | total)",
+   "submitted": 0.5489,
+   "recomputed": 0.5489,
+   "pass": true
+  },
+  {
+   "gate": "C(total | chronic)",
+   "submitted": 0.6464,
+   "recomputed": 0.6464,
+   "pass": true
+  },
+  {
+   "gate": "ICD-9 n",
+   "submitted": 41395,
+   "recomputed": 41395,
+   "pass": true
+  },
+  {
+   "gate": "ICD-9 AUROC",
+   "submitted": 0.6562,
+   "recomputed": 0.6562,
+   "pass": true
+  },
+  {
+   "gate": "ICD-10 n",
+   "submitted": 43823,
+   "recomputed": 43823,
+   "pass": true
+  },
+  {
+   "gate": "ICD-10 AUROC",
+   "submitted": 0.729,
+   "recomputed": 0.729,
+   "pass": true
+  }
+ ],
+ "flow": {
+  "cohort_n": 85242,
+  "cohort_deaths": 9475,
+  "cohort_survivors": 75767,
+  "died_within_24h_of_icu_admission": 1767,
+  "  of which hospital_expire_flag=1": 1767,
+  "  of which death time before ICU admission": 20,
+  "decedents_discharged_within_24h_not_died_within_24h": 49,
+  "  of which no recorded death time": "suppressed (cell below 10, or its complement)",
+  "  of which death recorded after discharge": "suppressed (cell below 10, or its complement)",
+  "  of which other": 0,
+  "survivors_discharged_within_24h": 2374,
+  "survivors_with_a_death_time (expect 0)": 0,
+  "decedents_with_no_death_time": "suppressed (cell below 10, or its complement)",
+  "anchor_n": 81052,
+  "anchor_deaths": 7659,
+  "anchor_survivors": 73393
+ },
+ "fixed_horizon": {
+  "from_hospital_admission_submitted_cohort": {
+   "7d": {
+    "events": 5166,
+    "auroc_count": 0.5681
+   },
+   "14d": {
+    "events": 7197,
+    "auroc_count": 0.628
+   },
+   "30d": {
+    "events": 8839,
+    "auroc_count": 0.6755
+   }
+  },
+  "from_t0_24h_cohort": {
+   "7d": {
+    "events": 4081,
+    "auroc_count": 0.6345
+   },
+   "14d": {
+    "events": 5943,
+    "auroc_count": 0.681
+   },
+   "30d": {
+    "events": 7204,
+    "auroc_count": 0.7157
+   },
+   "in_hospital": {
+    "events": 7659,
+    "auroc_count": 0.7288
+   }
+  },
+  "from_t0_submitted_cohort": {
+   "7d": {
+    "events": 5896,
+    "auroc_count": 0.6003
+   },
+   "14d": {
+    "events": 7758,
+    "auroc_count": 0.6471
+   },
+   "30d": {
+    "events": 9019,
+    "auroc_count": 0.6813
+   }
+  }
+ },
+ "stay_length_controls": {
+  "submitted_cohort_hospital_los (reproduction)": {
+   "auroc_recoded_los": 0.649,
+   "cond_count_given_recoded_values": 0.747,
+   "oof_recoded_los": 0.649,
+   "oof_recoded_los_plus_count": 0.7691
+  },
+  "24h_cohort_los_from_t0 (new)": {
+   "n": 81052,
+   "deaths": 7659,
+   "auroc_los_t0": 0.4906,
+   "auroc_count": 0.7288,
+   "spearman_count_los_t0": 0.5086,
+   "cond_count_given_los_t0_1": 0.7288,
+   "cond_los_t0_given_los_t0_1": 0.4906,
+   "cond_count_given_los_t0_5": 0.7464,
+   "cond_los_t0_given_los_t0_5": 0.4822,
+   "cond_count_given_los_t0_20": 0.7482,
+   "cond_los_t0_given_los_t0_20": 0.4935,
+   "cond_count_given_los_t0_100": 0.7472,
+   "cond_los_t0_given_los_t0_100": 0.4977,
+   "cond_count_given_los_t0_500": 0.7473,
+   "cond_los_t0_given_los_t0_500": 0.4978,
+   "auroc_recoded_los": 0.616,
+   "cond_count_given_recoded_values": 0.7493,
+   "oof_recoded_los": 0.6158,
+   "oof_recoded_los_plus_count": 0.7509
+  }
+ },
+ "appendix_c": {
+  "submitted_cohort": {
+   "auroc_chronic_only": 0.6453,
+   "auroc_nonchronic": 0.6794,
+   "auroc_random_subset_same_rate": [
+    0.6292,
+    0.6331,
+    0.6278,
+    0.6266,
+    0.6276,
+    0.6285,
+    0.6283,
+    0.6278,
+    0.6272,
+    0.6277,
+    0.6245,
+    0.6269,
+    0.6276,
+    0.6283,
+    0.6314,
+    0.6309,
+    0.6269,
+    0.6286,
+    0.6266,
+    0.6273
+   ],
+   "random_subset_min_max_mean": [
+    0.6245,
+    0.6331,
+    0.6281
+   ],
+   "cond_chronic_given_total": 0.5489,
+   "cond_total_given_chronic": 0.6464,
+   "mean_chronic_codes_deaths": 3.8,
+   "mean_chronic_codes_survivors": 2.63
+  },
+  "24h_cohort": {
+   "auroc_chronic_only": 0.661,
+   "auroc_nonchronic": 0.713,
+   "auroc_random_subset_same_rate": [
+    0.6525,
+    0.6533,
+    0.6493,
+    0.6494,
+    0.6478,
+    0.6499,
+    0.6485,
+    0.6491,
+    0.6488,
+    0.6488,
+    0.646,
+    0.6483,
+    0.6486,
+    0.6505,
+    0.6537,
+    0.6529,
+    0.6487,
+    0.6487,
+    0.6505,
+    0.6493
+   ],
+   "random_subset_min_max_mean": [
+    0.646,
+    0.6537,
+    0.6497
+   ],
+   "cond_chronic_given_total": 0.5488,
+   "cond_total_given_chronic": 0.6853,
+   "mean_chronic_codes_deaths": 3.98,
+   "mean_chronic_codes_survivors": 2.67
+  },
+  "chronic_retention_rate": 0.1544,
+  "note": "20 random draws; the submitted paper used 3 draws whose values depend on row order, so its 0.6237/0.6258/0.6279 are not expected to reproduce exactly"
+ },
+ "icd_version": {
+  "icd9_submitted": {
+   "n": 41395,
+   "auroc": 0.6562
+  },
+  "icd9_24h_cohort": {
+   "n": 39430,
+   "deaths": 3444,
+   "auroc": 0.6965,
+   "mean_codes": 16.08
+  },
+  "icd10_submitted": {
+   "n": 43823,
+   "auroc": 0.729
+  },
+  "icd10_24h_cohort": {
+   "n": 41599,
+   "deaths": 4211,
+   "auroc": 0.7591,
+   "mean_codes": 20.14
+  }
+ },
+ "other_counts_24h_cohort": {
+  "cohort": {
+   "n": 81052,
+   "deaths": 7659
+  },
+  "window_note": "24-hour versions keep rows whose event time (start, order or chart time) is at or before t0 + 24 h; procedures use chartdate <= date(t0 + 24 h), which reaches the end of that calendar day; microbiology falls back to chartdate when charttime is missing",
+  "ci_method": "200-replicate subject-cluster bootstrap of the oriented AUROC",
+  "reference: distinct diagnosis codes (no timestamp; whole admission only)": {
+   "auroc": 0.7288,
+   "ci95": [
+    0.7231,
+    0.7353
+   ]
+  },
+  "procedure codes (distinct)": {
+   "time_column": "date resolution only: chartdate <= date(t0 + 24 h)",
+   "seconds": 1.3,
+   "whole admission": {
+    "coverage": 0.8332,
+    "auroc": 0.6381,
+    "oriented": 0.6381,
+    "ci95_oriented": [
+     0.6321,
+     0.6456
+    ]
+   },
+   "up to t0 + 24 h": {
+    "coverage": 0.7413,
+    "auroc": 0.5772,
+    "oriented": 0.5772,
+    "ci95_oriented": [
+     0.5701,
+     0.5839
+    ]
+   },
+   "whole_minus_24h_oriented": 0.0609
+  },
+  "prescriptions (rows)": {
+   "time_column": "starttime",
+   "seconds": 25.7,
+   "whole admission": {
+    "coverage": 0.9973,
+    "auroc": 0.6828,
+    "oriented": 0.6828,
+    "ci95_oriented": [
+     0.6765,
+     0.6887
+    ]
+   },
+   "up to t0 + 24 h": {
+    "coverage": 0.9973,
+    "auroc": 0.6307,
+    "oriented": 0.6307,
+    "ci95_oriented": [
+     0.623,
+     0.6372
+    ]
+   },
+   "whole_minus_24h_oriented": 0.0521
+  },
+  "prescriptions (distinct drugs)": {
+   "time_column": "starttime",
+   "seconds": 25.5,
+   "whole admission": {
+    "coverage": 0.9973,
+    "auroc": 0.6802,
+    "oriented": 0.6802,
+    "ci95_oriented": [
+     0.6736,
+     0.686
+    ]
+   },
+   "up to t0 + 24 h": {
+    "coverage": 0.9973,
+    "auroc": 0.6107,
+    "oriented": 0.6107,
+    "ci95_oriented": [
+     0.604,
+     0.6167
+    ]
+   },
+   "whole_minus_24h_oriented": 0.0695
+  },
+  "microbiology specimens (distinct)": {
+   "time_column": "charttime, else chartdate",
+   "seconds": 7.7,
+   "whole admission": {
+    "coverage": 0.8076,
+    "auroc": 0.7025,
+    "oriented": 0.7025,
+    "ci95_oriented": [
+     0.6964,
+     0.7087
+    ]
+   },
+   "up to t0 + 24 h": {
+    "coverage": 0.7108,
+    "auroc": 0.637,
+    "oriented": 0.637,
+    "ci95_oriented": [
+     0.6304,
+     0.6432
+    ]
+   },
+   "whole_minus_24h_oriented": 0.0655
+  },
+  "laboratory tests (rows)": {
+   "time_column": "charttime",
+   "seconds": 167.9,
+   "whole admission": {
+    "coverage": 0.9968,
+    "auroc": 0.6733,
+    "oriented": 0.6733,
+    "ci95_oriented": [
+     0.6661,
+     0.68
+    ]
+   },
+   "up to t0 + 24 h": {
+    "coverage": 0.9924,
+    "auroc": 0.6457,
+    "oriented": 0.6457,
+    "ci95_oriented": [
+     0.6386,
+     0.6523
+    ]
+   },
+   "whole_minus_24h_oriented": 0.0276
+  },
+  "provider orders, POE (rows)": {
+   "time_column": "ordertime",
+   "seconds": 50.3,
+   "whole admission": {
+    "coverage": 0.9917,
+    "auroc": 0.6568,
+    "oriented": 0.6568,
+    "ci95_oriented": [
+     0.6492,
+     0.6634
+    ]
+   },
+   "up to t0 + 24 h": {
+    "coverage": 0.9861,
+    "auroc": 0.6054,
+    "oriented": 0.6054,
+    "ci95_oriented": [
+     0.5984,
+     0.6118
+    ]
+   },
+   "whole_minus_24h_oriented": 0.0514
+  },
+  "radiology notes": {
+   "time_column": "charttime",
+   "seconds": 22.0,
+   "whole admission": {
+    "coverage": 0.7442,
+    "auroc": 0.5991,
+    "oriented": 0.5991,
+    "ci95_oriented": [
+     0.5921,
+     0.6061
+    ]
+   },
+   "up to t0 + 24 h": {
+    "coverage": 0.7246,
+    "auroc": 0.5865,
+    "oriented": 0.5865,
+    "ci95_oriented": [
+     0.5804,
+     0.5939
+    ]
+   },
+   "whole_minus_24h_oriented": 0.0126
+  }
+ },
+ "gates_failed": [],
+ "wall_seconds": 588.8,
+ "suppression_note": "Cells below 10 admissions are suppressed in the public copy, together with any cell that would reveal one by subtraction."
+}
